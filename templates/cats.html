@@ -1,0 +1,13 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/cats.css">
+</head>
+<body>
+<h1>Cats</h1>
+<ul>
+  {% for cat in cats %}
+  <li>{{ cat.name }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
