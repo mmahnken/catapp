@@ -1,5 +1,7 @@
 #!/bin/bash
 
-pkill --pidfile server.pid
+set -o errexit 
+
+pkill -F server.pid
 
 echo -e "\nStopped.\n"
