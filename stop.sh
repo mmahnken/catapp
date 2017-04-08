@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -o errexit 
+set -o errexit        # stop script on any error
 
 pkill -F server.pid
 
