@@ -17,7 +17,7 @@ def connect_to_db(app):
     """Connect Flask to PostgreSQL."""
 
     app.config.update({
-        'SQLALCHEMY_DATABASE_URL': PG_URL,
+        'SQLALCHEMY_DATABASE_URI': PG_URL,
         'SQLALCHEMY_TRACK_MODIFICATIONS': True,
     })
     db.app = app
