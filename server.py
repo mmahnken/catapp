@@ -12,7 +12,7 @@ connect_to_db(app)
 def homepage():
     """Simple greeting."""
 
-    return "This is the cat app."
+    return render_template("home.html")
 
 
 @app.route("/cats")
